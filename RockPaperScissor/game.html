@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="game.css">
+
+    <!-- JS -->
+    <script defer src="game.js"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Orbitron:wght@400..900&family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Welcome to my mini game!</h1>
+    </header>
+
+    <main class="game-container">
+
+        <section class="game-content">
+            <h3>Join me in a game of Rock, Paper, Scissors!</h3>
+
+        <!-- Options -->
+        <div class="options">
+            <div class="option" id="rock">
+                <img src="Images/rock.png" alt="Rock">
+            </div>
+            <div class="option" id="paper">
+                <img src="Images/paper.png" alt="Paper">
+            </div>
+            <div class="option" id="scissors">
+                <img src="Images/scissors.png" alt="Scissors">
+            </div>
+        </div>
+        
+        <!-- User Input Form -->
+        <form id="form">
+            <label for="user-input">Click your choice above or state your move below:</label>
+            <input id="user-input" type="text" name="input" class="game-input" maxlength="8" placeholder="Rock, Paper, Scissor" required>
+            <input type="submit" class="submit-btn" value="enter">
+            </div>
+        </form>
+
+            <!-- Results -->
+            <div class="results">
+                <h4 id="computer-choice"></h4>
+                <h4 id="result"></h4>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
